@@ -499,6 +499,20 @@ img { max-width: 100%; height: auto; }
 .tag-blue { background: var(--blue-light) !important; color: var(--blue) !important; border-color: transparent !important; }
 .tag-gold { background: var(--gold-light) !important; color: #96701C !important; border-color: transparent !important; }
 .difficulty { color: var(--text-muted); font-size: 12.5px; font-weight: 600; }
+/* 即将上线占位（文章未发布，不可点击） */
+.tag-soon { background: var(--bg-secondary) !important; color: var(--text-light) !important; border-color: var(--border) !important; }
+.post-item.is-soon .ttl { color: var(--text-muted); }
+.soon-badge {
+  flex: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-light);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
 
 /* ---------- Baru diperiksa ---------- */
 .updated-section { background: var(--bg-secondary); }
