@@ -1,3 +1,21 @@
+# JejakKripto — robots.txt
+# 训练型 AI 爬虫禁止抓取；搜索引擎与搜索型 AI 爬虫默认开放。
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
 User-agent: *
 Allow: /
 
