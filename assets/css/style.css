@@ -254,6 +254,7 @@ img { max-width: 100%; height: auto; }
   display: flex; align-items: center; justify-content: center;
   font-size: 18px;
 }
+.hero-card .ic img { width: 24px; height: 24px; object-fit: contain; }
 .hero-card .ttl { font-weight: 700; color: var(--heading); font-size: 15px; }
 .hero-card .sub { color: var(--text-muted); font-size: 13px; }
 
