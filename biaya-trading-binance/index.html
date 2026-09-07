@@ -66,9 +66,9 @@
 
       <h2>Kenapa biaya Binance tidak bisa dijawab dengan satu angka</h2>
       <p>
-        Pertanyaan "berapa biaya Binance" sebenarnya kurang tepat. Jawabannya bergantung pada aktivitasmu:
-        membeli USDT lewat P2P, menukar BTC ke USDT di spot, dan menarik USDT ke wallet lain punya
-        perhitungan yang berbeda.
+        Pertanyaan "berapa biaya Binance?" perlu dibagi menurut jenis aktivitas. Jawabannya bergantung pada
+        aktivitasmu: membeli USDT lewat P2P, menukar BTC ke USDT di spot, dan menarik USDT ke wallet lain
+        punya perhitungan yang berbeda.
       </p>
       <div class="table-wrap">
         <table>
@@ -99,12 +99,36 @@
         <li><strong>Diskon BNB</strong> — membayar biaya dengan BNB bisa memberi diskon (saat ini sekitar 25% untuk spot).</li>
         <li><strong>Level VIP</strong> — tarif bisa lebih rendah untuk pengguna dengan volume trading 30 hari dan saldo BNB tertentu.</li>
       </ul>
+      <p>
+        Tarif aktual tetap bisa berbeda karena level VIP, pasangan trading tertentu, dan promosi zero-fee
+        yang sedang berjalan.
+      </p>
+
+      <h3>Contoh hitungan biaya spot</h3>
+      <p>Berikut contoh biaya spot untuk tarif Regular User 0,10% dan diskon BNB 25%:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nilai transaksi</th><th>Fee 0,10%</th><th>Fee dengan diskon BNB 25%</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>100 USDT</td><td>0,10 USDT</td><td>0,075 USDT</td></tr>
+            <tr><td>1.000 USDT</td><td>1,00 USDT</td><td>0,75 USDT</td></tr>
+            <tr><td>10.000 USDT</td><td>10,00 USDT</td><td>7,50 USDT</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Contoh ini memakai tarif Regular User 0,10% dan diskon BNB 25%. Tarif aktual bisa berbeda menurut
+        pasangan trading, level VIP, dan promosi yang aktif.
+      </p>
 
       <h2>Biaya P2P</h2>
       <p>
         Biaya P2P tidak sama dengan biaya spot. Binance punya halaman P2P Fee Rate terpisah, dan tarifnya
-        bisa berbeda menurut pasar fiat, peran (pembeli atau penjual), dan level akun. Sebelum menganggap
-        "P2P gratis", cek dulu struktur biaya pada halaman resminya.
+        bisa berbeda menurut pasar fiat, peran pengguna, pasangan trading, dan tier akun. Binance juga
+        dapat mengubah biaya untuk pasar tertentu, jadi jangan menganggap label "0 fee" berlaku untuk
+        semua transaksi.
       </p>
       <p>
         Selain biaya platform, di P2P kamu juga perlu memperhatikan harga USDT yang ditawarkan merchant.
@@ -119,8 +143,8 @@
         <li><strong>Jaringan yang dipilih</strong> — USDT lewat TRC20, ERC20, atau BEP20 bisa punya biaya berbeda.</li>
       </ul>
       <p>
-        Biaya penarikan dibayarkan ke penambang atau validator jaringan, bukan ke Binance. Karena itu,
-        biaya bisa naik turun mengikuti kondisi jaringan dan dapat berubah tanpa pemberitahuan.
+        Biaya penarikan digunakan untuk menutup biaya jaringan yang dibayarkan Binance kepada miner atau
+        validator. Nilainya dapat berubah mengikuti kondisi jaringan.
       </p>
       <p class="callout">
         <strong>Penting:</strong> pilih jaringan yang sesuai dengan alamat tujuan. Kalau jaringan tidak
@@ -129,9 +153,9 @@
 
       <h2>Bagaimana dengan deposit?</h2>
       <p>
-        Biaya deposit juga berbeda menurut aset dan jaringan. Sebagian metode tidak dikenakan biaya
-        platform, tapi jangan menganggap semua deposit gratis — cek halaman deposit untuk aset yang kamu
-        kirim.
+        Deposit kripto ke Binance umumnya tidak menggunakan satu biaya deposit tetap dari Binance. Namun,
+        jaringan atau platform pengirim dapat mengenakan biaya saat aset dikirim. Periksa halaman deposit
+        dan platform asal sebelum transfer.
       </p>
 
       <h2>Cara mengecek biaya sebelum transaksi</h2>
@@ -144,6 +168,26 @@
         Cara paling andal adalah melihat angka yang muncul di layar konfirmasi saat kamu akan bertransaksi —
         angka itulah yang benar-benar berlaku saat itu.
       </p>
+
+      <h2>Biaya nyata bukan cuma fee platform</h2>
+      <p>
+        Saat membandingkan biaya, jangan hanya melihat trading fee. Biaya efektif juga bisa mencakup
+        spread, slippage, biaya jaringan, dan biaya dari bank atau penyedia pembayaran.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Jenis biaya</th><th>Muncul di mana</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Trading fee</td><td>Spot</td></tr>
+            <tr><td>Spread</td><td>Convert / P2P / harga yang dikutip</td></tr>
+            <tr><td>Slippage</td><td>Market order</td></tr>
+            <tr><td>Network fee</td><td>Penarikan on-chain</td></tr>
+            <tr><td>Biaya bank / penyedia</td><td>Metode pembayaran fiat tertentu</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <h2>Kesalahan umum saat melihat biaya</h2>
       <ul>
@@ -191,6 +235,7 @@
         <li>Binance — Fee Schedule (spot &amp; margin). (<a href="https://www.binance.com/en/fee/schedule" target="_blank" rel="noopener">Binance</a>)</li>
         <li>Binance — P2P Fee Rate. (<a href="https://www.binance.com/en/fee/p2pFeeRate" target="_blank" rel="noopener">Binance</a>)</li>
         <li>Binance Support — Biaya Penarikan Kripto di Binance. (<a href="https://www.binance.com/id/support/faq/detail/d9ff84dccc24423cbe6d59859d86afe3" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance Academy — How to Calculate Transaction Fees on Binance. (<a href="https://www.binance.com/en/academy/articles/how-to-calculate-transaction-fees-on-binance" target="_blank" rel="noopener">Binance</a>)</li>
       </ul>
 
       <p class="callout">
