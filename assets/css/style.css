@@ -534,6 +534,8 @@ img { max-width: 100%; height: auto; }
   border-radius: 999px;
   white-space: nowrap;
 }
+.updated-item:hover { border-color: var(--border-hover); }
+.updated-item:hover .ttl { color: var(--primary); }
 
 /* ---------- Trust / Cara kami bekerja ---------- */
 .trust-grid {
