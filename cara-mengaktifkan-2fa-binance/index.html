@@ -45,8 +45,9 @@
 
       <p>
         <strong>2FA</strong> (autentikasi dua faktor) adalah lapisan keamanan kedua setelah kata sandi.
-        Setelah aktif, Binance akan meminta kode tambahan dari aplikasi atau perangkatmu setiap kali kamu
-        login atau menarik dana. Ini membuat akun jauh lebih sulit dibobol meskipun kata sandimu bocor.
+        Setelah aktif, Binance dapat meminta verifikasi tambahan saat kamu login, mengakses aset, mengubah
+        pengaturan akun, atau melakukan tindakan sensitif lainnya. Ini membuat akun jauh lebih sulit dibobol
+        meskipun kata sandimu bocor.
       </p>
 
       <p>
@@ -63,7 +64,7 @@
       <h2>Ringkasnya</h2>
       <ul>
         <li>2FA menambah lapisan keamanan kedua selain kata sandi.</li>
-        <li>Metode yang tersedia: aplikasi Authenticator (Google/Binance), Passkey, dan SMS.</li>
+        <li>Metode yang tersedia: authenticator app (seperti Google atau Binance), Passkey, SMS, dan email.</li>
         <li>Aplikasi Authenticator atau Passkey lebih aman daripada SMS.</li>
         <li>Simpan kunci setup sebagai cadangan; tanpa itu, ponsel hilang bisa bikin kamu susah masuk.</li>
         <li>Pastikan waktu ponsel disetel otomatis agar kode 6 digit tidak ditolak.</li>
@@ -77,27 +78,42 @@
         menarik asetmu.
       </p>
 
+      <h2>2FA tidak membuat akun 100% aman</h2>
+      <p>
+        2FA mengurangi risiko, tetapi tidak menggantikan kebiasaan keamanan dasar. Kalau kamu sendiri
+        menyetujui login palsu, memberikan kode kepada scammer, atau memasang software remote access,
+        2FA masih bisa dilewati lewat rekayasa sosial.
+      </p>
+
       <h2>Pilihan metode 2FA di Binance</h2>
       <p>
-        Binance mendukung beberapa metode. Pilih satu yang paling nyaman, tapi perhatikan tingkat
-        keamanannya.
+        Binance mendukung beberapa metode, termasuk authenticator app, passkey, SMS, dan email. Pilih
+        yang paling nyaman, tapi perhatikan kelebihan dan risikonya masing-masing.
       </p>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Metode</th><th>Cara kerja</th><th>Keamanan</th><th>Catatan</th></tr>
+            <tr><th>Metode</th><th>Cara kerja</th><th>Kelebihan</th><th>Hal yang perlu diperhatikan</th></tr>
           </thead>
           <tbody>
-            <tr><td>Google Authenticator</td><td>Kode 6 digit di aplikasi</td><td>Tinggi</td><td>Gratis, paling umum dipakai</td></tr>
-            <tr><td>Binance Authenticator</td><td>Kode 6 digit + backup cloud</td><td>Tinggi</td><td>Terintegrasi dengan Binance</td></tr>
-            <tr><td>Passkey</td><td>Biometrik (Face ID, sidik jari) atau kunci hardware</td><td>Paling tinggi</td><td>Lebih tahan phishing</td></tr>
-            <tr><td>SMS</td><td>Kode lewat pesan singkat</td><td>Sedang</td><td>Rentan terhadap SIM swap</td></tr>
+            <tr><td>Authenticator App</td><td>Kode sekali pakai dari aplikasi</td><td>Tidak bergantung pada SMS</td><td>Perlu menjaga akses ke perangkat dan metode pemulihan</td></tr>
+            <tr><td>Passkey</td><td>Biometrik, PIN perangkat, atau security key</td><td>Lebih tahan terhadap phishing dan SIM swap</td><td>Dukungan bergantung pada perangkat</td></tr>
+            <tr><td>SMS / Phone</td><td>Kode lewat SMS atau panggilan</td><td>Mudah digunakan</td><td>Lebih rentan terhadap risiko seperti SIM swap</td></tr>
+            <tr><td>Email</td><td>Kode lewat email</td><td>Mudah sebagai metode tambahan</td><td>Keamanan ikut bergantung pada akun email</td></tr>
           </tbody>
         </table>
       </div>
       <p>
-        Untuk pemula, aplikasi Authenticator adalah pilihan yang seimbang antara keamanan dan kemudahan.
-        Kalau perangkatmu mendukung, Passkey lebih nyaman sekaligus lebih aman.
+        Untuk pemula, authenticator app adalah pilihan yang seimbang antara keamanan dan kemudahan. Kalau
+        perangkatmu mendukung, passkey bisa jadi opsi yang lebih nyaman.
+      </p>
+
+      <h2>Apakah sebaiknya memakai Passkey?</h2>
+      <p>
+        Kalau perangkatmu mendukung, passkey layak dipertimbangkan sebagai metode keamanan tambahan.
+        Binance mendukung passkey melalui biometrik, PIN perangkat, iCloud Keychain, atau security key
+        tertentu. Passkey lebih tahan terhadap phishing dibanding kode yang harus diketik ulang secara
+        manual. (<a href="https://www.binance.com/en/support/faq/detail/2aec8fe0437242f2a5fbef9cdb71d4c2" target="_blank" rel="noopener">Binance</a>)
       </p>
 
       <h2>Yang perlu disiapkan sebelum mulai</h2>
@@ -107,13 +123,18 @@
             <tr><th>Yang disiapkan</th><th>Untuk apa</th><th>Catatan</th></tr>
           </thead>
           <tbody>
-            <tr><td>Aplikasi Authenticator</td><td>Menghasilkan kode 6 digit</td><td>Unduh dari toko aplikasi resmi</td></tr>
-            <tr><td>Akun Binance terverifikasi (KYC)</td><td>Mengakses pengaturan keamanan</td><td>Tanpa KYC, 2FA bisa terbatas</td></tr>
-            <tr><td>Ponsel dengan waktu otomatis</td><td>Kode 6 digit tidak ditolak</td><td>Setel ke waktu jaringan</td></tr>
-            <tr><td>Tempat menyimpan cadangan</td><td>Menyimpan kunci setup</td><td>Offline, jangan di galeri atau chat</td></tr>
+            <tr><td>Akun Binance</td><td>Membuka menu keamanan</td><td>Login menggunakan akun sendiri</td></tr>
+            <tr><td>Authenticator resmi</td><td>Menghasilkan kode verifikasi</td><td>Unduh dari toko aplikasi resmi</td></tr>
+            <tr><td>Ponsel pribadi</td><td>Menyimpan authenticator</td><td>Jangan gunakan perangkat orang lain</td></tr>
+            <tr><td>Metode pemulihan</td><td>Untuk kondisi perangkat hilang</td><td>Simpan dengan aman</td></tr>
           </tbody>
         </table>
       </div>
+      <p>
+        Fitur <strong>2FA Verification Strategy</strong> yang lebih lanjut dapat memiliki syarat tambahan.
+        Binance saat ini menyebut fitur tersebut memerlukan KYC dan saldo lebih dari 100 USDT.
+        (<a href="https://www.binance.com/en/support/faq/detail/b53000f9a9c4406db5f93a8f8e7475f6" target="_blank" rel="noopener">Binance</a>)
+      </p>
 
       <h2>Langkah mengaktifkan 2FA dengan Authenticator</h2>
       <p>Contoh di bawah memakai Google Authenticator. Langkah untuk Binance Authenticator hampir sama.</p>
@@ -156,10 +177,16 @@
 
       <h2>Kunci setup itu penting</h2>
       <p>
-        Kunci setup adalah satu-satunya cara memindahkan 2FA ke perangkat baru tanpa melewati proses
-        reset. Jangan simpan di screenshot, galeri foto, atau chat. Kalau peretas dapat kunci ini, mereka
-        bisa menyalin 2FA-mu dan melewati lapisan keamanan. Tulis di kertas dan simpan offline, atau pakai
-        password manager yang tepercaya.
+        Kunci setup dapat membantu memulihkan konfigurasi authenticator pada perangkat baru. Kalau kunci
+        tersebut tidak tersedia, kamu masih dapat menggunakan prosedur perubahan atau reset keamanan
+        Binance, tetapi prosesnya dapat memerlukan verifikasi tambahan. Jangan simpan kunci di screenshot,
+        galeri foto, atau chat. Kalau peretas dapat kunci ini, mereka bisa menyalin 2FA-mu dan melewati
+        lapisan keamanan. Tulis di kertas dan simpan offline, atau pakai password manager yang tepercaya.
+      </p>
+      <p class="callout">
+        <strong>Catatan:</strong> Binance menyebut penarikan, transfer internal, dan transaksi P2P dapat
+        dinonaktifkan hingga 48 jam setelah authenticator diubah.
+        (<a href="https://www.binance.com/en/support/faq/detail/115003585911" target="_blank" rel="noopener">Binance</a>)
       </p>
 
       <h2>Jangan lakukan ini</h2>
@@ -183,13 +210,13 @@
       <p>2FA sangat dianjurkan, dan untuk aksi tertentu seperti penarikan, Binance biasanya meminta verifikasi tambahan. Aktifkan sebelum menyimpan aset.</p>
 
       <h3>Mana yang lebih baik: Google Authenticator atau Binance Authenticator?</h3>
-      <p>Fungsinya sama. Binance Authenticator punya backup cloud, Google Authenticator lebih umum dipakai. Pilih yang paling kamu nyaman.</p>
+      <p>Keduanya dapat digunakan sebagai authenticator app. Pilih aplikasi resmi yang paling mudah kamu kelola dan pulihkan. Yang lebih penting adalah menjaga akses ke perangkat dan metode pemulihan akun.</p>
 
       <h3>Apa itu kunci setup?</h3>
       <p>Kunci untuk memindahkan 2FA ke perangkat baru. Simpan offline dan jangan dibagikan ke siapa pun.</p>
 
-      <h3>Kenapa kode 6 digit saya ditolak?</h3>
-      <p>Biasanya karena waktu ponsel tidak disetel otomatis. Setel ke waktu jaringan, lalu coba lagi.</p>
+      <h3>Kenapa kode Authenticator ditolak?</h3>
+      <p>Kode bisa gagal karena sudah berganti, waktu perangkat tidak sinkron, aplikasi yang dipilih salah, atau konfigurasi authenticator bermasalah. Pastikan waktu perangkat otomatis, gunakan kode terbaru, lalu periksa kembali akun yang dipilih di aplikasi Authenticator.</p>
 
       <h3>Apakah SMS 2FA aman?</h3>
       <p>SMS lebih rentan terhadap SIM swap. Kalau bisa, pakai aplikasi Authenticator atau Passkey.</p>
@@ -210,6 +237,8 @@
       <ul>
         <li>Binance Support — How to Enable Google Authenticator for 2FA. (<a href="https://www.binance.com/en/support/faq/detail/115000433432" target="_blank" rel="noopener">Binance</a>)</li>
         <li>Binance Support — 2FA Verification Strategy, pilihan metode per skenario. (<a href="https://www.binance.com/en/support/faq/detail/b53000f9a9c4406db5f93a8f8e7475f6" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance Support — How to Create a Passkey for My Binance Account. (<a href="https://www.binance.com/en/support/faq/detail/2aec8fe0437242f2a5fbef9cdb71d4c2" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance Support — How to Change My Google Authenticator. (<a href="https://www.binance.com/en/support/faq/detail/115003585911" target="_blank" rel="noopener">Binance</a>)</li>
       </ul>
 
       <p class="callout">
