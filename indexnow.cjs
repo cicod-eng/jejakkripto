@@ -4,7 +4,7 @@
 const https = require('https');
 
 const HOST = 'jejakkripto.com';
-const KEY = 'f9fbba71c0756d3566aff9ab8f8f2879';
+const KEY = '91a25e9ebee347589012f92b1b2b8721';
 
 const urls = process.argv.slice(2).filter((u) => /^https:\/\/jejakkripto\.com\//.test(u));
 
