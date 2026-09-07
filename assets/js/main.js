@@ -51,13 +51,29 @@ var JEJAK_CONFIG = {
     });
   }
 
-  // 搜索按钮：占位，后续接站内搜索页
+  // 搜索按钮：首页滚动到搜索框并聚焦，内页跳回 /#cari
   var searchToggles = document.querySelectorAll('.search-toggle');
   searchToggles.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      window.location.href = '/pencarian/';
+      var path = window.location.pathname.replace(/\/+$/, '');
+      if (path === '' || path === '/index.html') {
+        var box = document.getElementById('cari');
+        if (box) {
+          box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          var input = box.querySelector('input[type="search"]');
+          if (input) input.focus();
+        }
+      } else {
+        window.location.href = '/#cari';
+      }
     });
   });
+
+  // 从内页带 #cari 跳回时，聚焦搜索框（浏览器已自动滚动到锚点）
+  if (window.location.hash === '#cari') {
+    var searchInput = document.querySelector('#cari input[type="search"]');
+    if (searchInput) searchInput.focus();
+  }
 
   // Affiliate 出站点击事件埋点（GA4 事件名统一，见总规范第 44 条）
   document.addEventListener('click', function (e) {
