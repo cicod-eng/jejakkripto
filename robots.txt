@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jejakkripto.com/sitemap.xml
