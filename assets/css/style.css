@@ -106,13 +106,7 @@ img { max-width: 100%; height: auto; }
 .brand .mark {
   width: 30px; height: 30px;
   border-radius: 8px;
-  background: var(--primary);
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 700;
+  object-fit: contain;
 }
 /* Logo 双色文字：Jejak(深) Kripto(青绿)，不用 .com */
 .brand .jk {
