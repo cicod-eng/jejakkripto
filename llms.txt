@@ -1,0 +1,35 @@
+# JejakKripto
+
+> JejakKripto adalah panduan kripto berbahasa Indonesia untuk pemula. Kami menjelaskan cara daftar akun, verifikasi identitas (KYC), membeli USDT dengan rupiah lewat P2P, mengamankan akun dengan 2FA, dan memahami biaya trading di Binance dan OKX — ditulis dari sisi pengguna Indonesia, dengan rupiah (IDR) dan regulasi OJK. Informasi bersifat edukatif, bukan nasihat investasi.
+
+## Panduan utama
+
+- [Panduan Binance Lengkap untuk Pengguna Indonesia](https://jejakkripto.com/panduan-binance/): urutan lengkap dari daftar, KYC, 2FA, beli USDT lewat P2P, sampai biaya dan penarikan.
+- [Panduan OKX Lengkap untuk Pengguna Indonesia](https://jejakkripto.com/panduan-okx/): panduan OKX untuk pengguna Indonesia.
+
+## Bursa kripto
+
+- [Bursa Kripto di Indonesia](https://jejakkripto.com/bursa-kripto/): Binance, OKX, biaya, KYC, P2P, dan cara memilih bursa yang aman.
+
+## Belajar kripto (dasar)
+
+- [Berapa USDT yang Kamu Dapat dari Rp100.000?](https://jejakkripto.com/belajar-kripto/berapa-usdt-dari-rp100000/): contoh kurs dan cara hitung USDT dari rupiah.
+- [Belajar Kripto dari Nol](https://jejakkripto.com/belajar-kripto/): dasar Bitcoin, USDT, dan istilah kripto.
+
+## Dompet & keamanan
+
+- [Dompet Kripto & Keamanan](https://jejakkripto.com/dompet-kripto/): wallet, seed phrase, dan cara mengamankan akun.
+
+## Artikel panduan Binance
+
+- [Cara Daftar Binance di Indonesia](https://jejakkripto.com/cara-daftar-binance/)
+- [Cara Verifikasi Identitas (KYC) di Binance](https://jejakkripto.com/kyc-binance/)
+- [Cara Mengaktifkan 2FA di Binance](https://jejakkripto.com/cara-mengaktifkan-2fa-binance/)
+- [Cara Beli USDT dengan Rupiah di Binance P2P](https://jejakkripto.com/cara-beli-usdt-binance-p2p/)
+- [Biaya Trading Binance: Spot, P2P, dan Penarikan](https://jejakkripto.com/biaya-trading-binance/)
+
+## Tentang situs
+
+- [Tentang Kami](https://jejakkripto.com/tentang-kami/)
+- [Kebijakan Editorial](https://jejakkripto.com/kebijakan-editorial/)
+- [Pengungkapan Afiliasi](https://jejakkripto.com/pengungkapan-afiliasi/)
