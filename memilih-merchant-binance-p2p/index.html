@@ -29,11 +29,11 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {"@type": "Question", "name": "Apakah Shield Merchant dan Verified Merchant itu sama?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Verified Merchant (badge kuning) menandai merchant yang konsisten memberi layanan baik. Shield Merchant (ikon perisai) menambah jaminan berupa security deposit dan kemungkinan kompensasi kalau rekeningmu dibekukan karena kesalahan merchant."}},
+          {"@type": "Question", "name": "Apakah Shield Merchant dan Verified Merchant itu sama?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Verified Merchant (badge kuning) menandai merchant yang lolos verifikasi Binance. Shield Merchant (ikon perisai) adalah Verified Merchant yang lolos pemeriksaan tambahan dan menyediakan security deposit. Bagi pembeli USDT, keduanya sama-sama penanda rekam jejak, bukan jaminan perlindungan."}},
           {"@type": "Question", "name": "Apakah harus selalu memilih merchant dengan harga termurah?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Harga termurah kadang datang dari merchant dengan reputasi minim. Bandingkan harga, completion rate, dan jumlah order secara bersamaan sebelum memutuskan."}},
           {"@type": "Question", "name": "Berapa completion rate yang dianggap bagus?", "acceptedAnswer": {"@type": "Answer", "text": "Binance tidak memublikasikan angka minimum resmi. Sebagai patokan praktis, completion rate di atas 98 persen biasanya menandakan merchant yang lebih konsisten, sementara yang jauh di bawah 95 persen sebaiknya dihindari."}},
           {"@type": "Question", "name": "Apakah badge menjamin transaksi pasti aman?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Badge menurunkan risiko tetapi bukan jaminan. Tetap verifikasi bahwa dana benar-benar masuk ke rekeningmu dan jangan keluar dari chat resmi Binance."}},
-          {"@type": "Question", "name": "Kalau rekening bank dibekukan setelah bayar ke merchant, apa yang bisa dilakukan?", "acceptedAnswer": {"@type": "Answer", "text": "Kalau merchantnya Shield Merchant dan pembekuan terjadi karena kesalahan merchant, kamu bisa mengajukan klaim kompensasi ke Binance. Klaim ditinjau per kasus. Hubungi dukungan Binance dan lampirkan bukti transaksi."}}
+          {"@type": "Question", "name": "Kalau rekening bankku dibekukan setelah beli USDT di P2P, apakah dapat kompensasi?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak otomatis. Kompensasi pembekuan rekening dari program Shield Merchant terutama berlaku untuk pengguna yang menjual kripto kepada Shield Merchant dan rekening penerimanya dibekukan. Bagi pembeli, rekening bisa dibekukan karena berbagai alasan, misalnya aktivitas yang dianggap tidak wajar, aturan anti pencucian uang (AML/CTF), chargeback, perintah hukum, atau masalah verifikasi akun. Kalau terjadi, hubungi bank dan dukungan Binance sambil melampirkan bukti transaksi."}}
         ]
       }
     ]
@@ -72,8 +72,9 @@
 
       <p>
         Sebelum membeli USDT lewat <strong>Binance P2P</strong>, keputusan yang paling menentukan adalah
-        memilih <strong>merchant</strong> (penjual). Kalau kamu pilih merchant yang tepat, risiko order
-        bermasalah, dana tertahan, atau rekening bank dibekukan turun drastis. Inti panduan ini:
+        memilih <strong>merchant</strong> (penjual). Kalau kamu memilih merchant dengan rekam jejak yang
+        jelas, kamu bisa mengurangi sebagian risiko operasional, seperti order lama, komunikasi
+        bermasalah, atau transaksi dengan pihak yang riwayatnya sulit dinilai. Inti panduan ini:
         prioritaskan merchant dengan <strong>badge terverifikasi</strong>, <strong>completion rate</strong>
         tinggi, dan riwayat transaksi yang banyak.
       </p>
@@ -96,7 +97,7 @@
         <li>Ada dua badge utama: <strong>Shield Merchant</strong> (ikon perisai) dan <strong>Verified Merchant</strong> (badge kuning). Keduanya berbeda, jangan disamakan.</li>
         <li>Sebelum memilih, cek completion rate, jumlah order selesai, waktu pelepasan, dan ulasan merchant.</li>
         <li>Harga termurah belum tentu pilihan terbaik — reputasi dan spread ikut menentukan.</li>
-        <li>Selalu transaksi di dalam chat Binance dan verifikasi dana benar-benar masuk sebelum melepas aset.</li>
+        <li>Selalu transaksi di dalam chat Binance dan konfirmasi pembayaran hanya setelah transfer benar-benar berhasil.</li>
       </ul>
 
       <h2>Daftar isi</h2>
@@ -117,14 +118,14 @@
         Di P2P, USDT tidak dibeli dari Binance, melainkan dari merchant yang memasang iklan. Merchant
         inilah yang menentukan harga, batas minimum order, metode pembayaran, dan seberapa cepat aset
         dilepas setelah kamu bayar. Memilih merchant yang buruk bisa berujung pada order yang lama
-        tertahan, atau — dalam kasus yang lebih serius — rekening bank yang dibekukan karena dana yang
-        masuk berasal dari pihak bermasalah.
+        tertahan, komunikasi yang berbelit-belit, atau — dalam kasus terburuk — dana yang sudah kamu
+        transfer tanpa USDT yang masuk.
       </p>
       <p>
         Bagi pembeli di Indonesia, kekhawatiran terbesar biasanya dua: merchant yang lambat melepas USDT,
-        dan risiko rekening bank dibekukan. Karena itu, cara kamu memilih merchant bukan sekadar soal
-        harga — ini soal memilih pihak yang riwayatnya bisa diperiksa dan kecil kemungkinan menimbulkan
-        masalah.
+        dan merchant yang mencoba mengarahkan transaksi keluar dari chat resmi. Karena itu, cara kamu
+        memilih merchant bukan sekadar soal harga — ini soal memilih pihak yang riwayatnya bisa diperiksa
+        dan kecil kemungkinan menimbulkan masalah.
       </p>
 
       <h2 id="dua-badge">Dua badge yang perlu kamu kenali</h2>
@@ -136,34 +137,42 @@
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Badge</th><th>Bentuknya</th><th>Apa artinya</th><th>Perlindungan ekstra</th></tr>
+            <tr><th>Badge</th><th>Apa artinya</th><th>Relevan untuk pembeli USDT</th></tr>
           </thead>
           <tbody>
             <tr>
               <td><strong>Shield Merchant</strong></td>
-              <td>Ikon perisai di samping nama merchant</td>
-              <td>Merchant aktif di Binance P2P lebih dari 90 hari, menyetor jaminan keamanan (security deposit), riwayat transaksi bersih</td>
-              <td>Bisa mengajukan kompensasi kalau rekeningmu dibekukan karena kesalahan merchant (ditinjau per kasus)</td>
+              <td>Verified Merchant yang lolos pemeriksaan tambahan dan menyediakan security deposit sesuai wilayah</td>
+              <td>Bisa menjadi sinyal tambahan tentang rekam jejak merchant, tetapi program kompensasi pembekuan rekening terutama berlaku ketika pengguna menjual kripto dan menerima pembayaran dari Shield Merchant</td>
             </tr>
             <tr>
               <td><strong>Verified Merchant</strong></td>
-              <td>Badge kuning di profil</td>
-              <td>Merchant yang lolos verifikasi tambahan dan konsisten memberi layanan baik</td>
-              <td>Tidak ada kompensasi khusus; ini penanda reputasi</td>
+              <td>Merchant yang telah melalui proses verifikasi Binance</td>
+              <td>Membantu menyaring merchant dengan identitas dan rekam jejak yang lebih jelas, tetapi tetap bukan jaminan transaksi tanpa risiko</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <p>
-        <strong>Shield Merchant</strong> adalah program yang lebih baru. Menurut dokumentasi resmi
-        Binance, merchant dengan badge ini sudah aktif lebih dari 90 hari, menyelesaikan transaksi dengan
-        banyak counterparty berbeda, tidak punya catatan negatif soal pembekuan rekening bank, dan
-        menyetor jaminan keamanan sesuai wilayah. Pembeli bisa memakai filter <strong>Shield Only</strong>
-        supaya hanya penawaran dari merchant berperisai yang muncul. Kalau rekeningmu dibekukan setelah
-        membayar karena alasan yang berasal dari merchant, kamu bisa mengajukan kompensasi — Binance
-        menyebut bisa sampai 100% tergantung wilayah, dengan klaim ditinjau per kasus.
-        (<a href="https://www.binance.com/en/blog/p2p/4584137180482047749" target="_blank" rel="noopener">Binance</a>)
+        <strong>Shield Merchant</strong> adalah kategori merchant yang telah melalui pemeriksaan
+        tambahan dari Binance dan diwajibkan menyediakan <em>security deposit</em> sesuai ketentuan
+        wilayah. Badge ini bisa menjadi salah satu sinyal tambahan saat menilai rekam jejak merchant.
+        Pembeli bisa memakai filter <strong>Shield Only</strong> supaya hanya penawaran dari merchant
+        berperisai yang muncul.
+        (<a href="https://www.binance.com/en-IN/support/faq/detail/2fe91bc724744780b0b4b56187541aa1" target="_blank" rel="noopener">Binance</a>)
+      </p>
+      <p>
+        Namun, ada satu hal yang sering disalahpahami. Program perlindungan terhadap pembekuan rekening
+        tidak berarti setiap pembeli USDT otomatis mendapat kompensasi kalau rekening banknya bermasalah
+        setelah membayar. Dalam dokumentasi Binance, perlindungan tersebut terutama berlaku pada kondisi
+        tertentu ketika pengguna <strong>menjual kripto kepada Shield Merchant, menerima pembayaran fiat,
+        lalu rekening penerimanya dibekukan karena alasan yang dapat dikaitkan dengan merchant</strong>.
+      </p>
+      <p>
+        Jadi, untuk kamu yang sedang <strong>membeli USDT</strong>, anggap badge Shield sebagai salah
+        satu indikator tambahan saat memilih merchant — bukan sebagai jaminan bahwa rekening bank atau
+        transaksimu pasti terlindungi.
       </p>
 
       <p>
@@ -176,9 +185,9 @@
       </p>
 
       <p>
-        Jadi singkatnya: kalau kamu ingin perlindungan ekstra soal pembekuan rekening, prioritaskan
-        Shield Merchant. Kalau tidak ada merchant berperisai untuk nominal yang kamu mau, Verified
-        Merchant dengan angka yang bagus tetap pilihan yang masuk akal.
+        Jadi singkatnya: buat kamu yang membeli USDT, badge Shield berguna sebagai penanda rekam jejak
+        yang lebih ketat, bukan sebagai jaminan perlindungan rekening. Kalau tidak ada merchant berperisai
+        untuk nominal yang kamu mau, Verified Merchant dengan angka yang bagus tetap pilihan yang masuk akal.
       </p>
 
       <h2 id="angka">Angka yang wajib dicek di profil merchant</h2>
@@ -240,10 +249,9 @@
       <ul>
         <li><strong>Harga jauh di bawah pasar</strong> — terlalu bagus untuk jadi kenyataan.</li>
         <li><strong>Diminta pindah ke WhatsApp atau Telegram</strong> — chat resmi Binance P2P adalah satu-satunya tempat yang aman.</li>
-        <li><strong>Nama rekening berbeda</strong> dari nama merchant di Binance.</li>
+        <li><strong>Nama pemilik rekening atau detail pembayaran tidak sesuai dengan informasi yang ditampilkan Binance</strong>, atau merchant meminta kamu mengirim dana ke rekening lain lewat chat.</li>
         <li><strong>Diminta bayar setelah order kedaluwarsa atau dibatalkan</strong>.</li>
-        <li><strong>Didesak melepas aset cepat</strong> dengan alasan mendesak.</li>
-        <li><strong>Diminta membayar dari rekening pihak ketiga</strong> atau mengirim dana ke rekening yang berubah di tengah proses.</li>
+        <li><strong>Didesak transfer atau konfirmasi pembayaran dengan cepat</strong> dengan alasan mendesak.</li>
         <li><strong>Diminta password, kode 2FA, atau kode verifikasi</strong> — tidak ada alasan sah untuk ini.</li>
       </ul>
       <p>
@@ -290,15 +298,20 @@
       </p>
 
       <h2 id="saat-transaksi">Saat transaksi berjalan</h2>
-      <p>Setelah order dibuat, kehati-hatian tidak boleh berhenti.</p>
+      <p>Setelah order dibuat, periksa lagi detail pembayaran sebelum mengirim uang.</p>
       <ul>
-        <li>Transfer dana <strong>persis</strong> sesuai nominal dan ke rekening yang tertera di order.</li>
-        <li>Konfirmasi pembayaran di Binance hanya setelah transfer benar-benar berhasil.</li>
-        <li>Jangan percaya <em>screenshot</em> bukti transfer dari pihak lain — screenshot bisa dipalsukan. Verifikasi dana di rekeningmu sendiri.</li>
-        <li>Tetap berkomunikasi di chat Binance P2P, jangan pindah ke platform lain.</li>
-        <li>Jangan pernah membagikan password atau kode 2FA. Kalau belum mengaktifkan 2FA, baca
-        <a href="/cara-mengaktifkan-2fa-binance/">Cara Mengaktifkan 2FA di Binance</a>.</li>
+        <li>Transfer dana <strong>persis sesuai nominal order</strong> ke rekening atau metode pembayaran yang tercantum di halaman Binance P2P.</li>
+        <li>Pastikan nama dan detail rekening tujuan sesuai dengan informasi pembayaran yang ditampilkan di order.</li>
+        <li>Jangan klik <strong>"Ditransfer"</strong>, <strong>"Beri Tahu Penjual"</strong>, atau <strong>"Konfirmasi Pembayaran"</strong> sebelum transfer benar-benar berhasil.</li>
+        <li>Kalau kamu sudah membayar, jangan membatalkan order hanya karena merchant meminta lewat chat. Pastikan dana sudah dikembalikan terlebih dahulu jika memang order harus dibatalkan.</li>
+        <li>Simpan bukti transfer sampai USDT sudah masuk ke saldo Binance dan order berstatus selesai.</li>
+        <li>Tetap berkomunikasi melalui chat Binance P2P. Jangan melanjutkan transaksi secara pribadi lewat WhatsApp atau Telegram.</li>
+        <li>Jangan pernah membagikan password, kode 2FA, OTP, atau kode verifikasi kepada merchant. Kalau belum mengaktifkan 2FA, baca <a href="/cara-mengaktifkan-2fa-binance/">Cara Mengaktifkan 2FA di Binance</a>.</li>
       </ul>
+      <p>
+        Kalau setelah bayar USDT belum juga masuk, jangan transfer ulang dulu. Langkahnya ada di bagian
+        <a href="#masalah">Kalau terjadi masalah</a>.
+      </p>
 
       <h2 id="masalah">Kalau terjadi masalah</h2>
       <p>
@@ -321,7 +334,7 @@
       <h2 id="faq">Pertanyaan umum</h2>
 
       <h3>Apakah Shield Merchant dan Verified Merchant itu sama?</h3>
-      <p>Tidak. Verified Merchant (badge kuning) menandai merchant yang konsisten memberi layanan baik. Shield Merchant (ikon perisai) menambah jaminan berupa security deposit dan kemungkinan kompensasi kalau rekeningmu dibekukan karena kesalahan merchant.</p>
+      <p>Tidak. Verified Merchant (badge kuning) menandai merchant yang lolos verifikasi Binance. Shield Merchant (ikon perisai) adalah Verified Merchant yang lolos pemeriksaan tambahan dan menyediakan security deposit. Bagi pembeli USDT, keduanya sama-sama penanda rekam jejak, bukan jaminan perlindungan.</p>
 
       <h3>Apakah harus selalu memilih merchant dengan harga termurah?</h3>
       <p>Tidak. Harga termurah kadang datang dari merchant dengan reputasi minim. Bandingkan harga, completion rate, dan jumlah order secara bersamaan sebelum memutuskan.</p>
@@ -332,8 +345,8 @@
       <h3>Apakah badge menjamin transaksi pasti aman?</h3>
       <p>Tidak. Badge menurunkan risiko tetapi bukan jaminan. Tetap verifikasi bahwa dana benar-benar masuk ke rekeningmu dan jangan keluar dari chat resmi Binance.</p>
 
-      <h3>Kalau rekening bank dibekukan setelah bayar ke merchant, apa yang bisa dilakukan?</h3>
-      <p>Kalau merchantnya Shield Merchant dan pembekuan terjadi karena kesalahan merchant, kamu bisa mengajukan klaim kompensasi ke Binance. Klaim ditinjau per kasus. Hubungi dukungan Binance dan lampirkan bukti transaksi.</p>
+      <h3>Kalau rekening bankku dibekukan setelah beli USDT di P2P, apakah dapat kompensasi?</h3>
+      <p>Tidak otomatis. Kompensasi pembekuan rekening dari program Shield Merchant terutama berlaku untuk pengguna yang menjual kripto kepada Shield Merchant dan rekening penerimanya dibekukan. Bagi pembeli, rekening bisa dibekukan karena berbagai alasan — aktivitas yang dianggap tidak wajar, aturan anti pencucian uang (AML/CTF), chargeback, perintah hukum, atau masalah verifikasi akun. Kalau terjadi, hubungi bank dan dukungan Binance sambil melampirkan bukti transaksi.</p>
 
       <h2>Langkah berikutnya</h2>
       <p>Setelah kamu paham cara memilih merchant, bacaan yang disarankan:</p>
@@ -356,9 +369,11 @@
 
       <h2>Sumber resmi</h2>
       <ul>
-        <li>Binance — Your Guide to Safe P2P Trading With Binance P2P Shield Merchant Program. (<a href="https://www.binance.com/en/blog/p2p/4584137180482047749" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — P2P Shield Merchant Program (kriteria dan cakupan kompensasi). (<a href="https://www.binance.com/en-IN/support/faq/detail/2fe91bc724744780b0b4b56187541aa1" target="_blank" rel="noopener">Binance</a>)</li>
         <li>Binance — What Is Binance P2P's Verified Merchant Badge. (<a href="https://www.binance.com/en/blog/p2p/1249198925282053084" target="_blank" rel="noopener">Binance</a>)</li>
-        <li>Binance — Keamanan P2P Kripto: Cara Mengenali dan Menghindari Penipuan. (<a href="https://www.binance.com/id/blog/p2p/8630811537372460546" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — Bagaimana Cara Membeli Mata Uang Kripto melalui P2P. (<a href="https://www.binance.com/id/support/faq/detail/360039384951" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — How to Handle Bank Account Freezes and Chargeback Disputes in P2P. (<a href="https://www.binance.com/en/support/faq/detail/88c469c8a41544d99b12ba9cb0fdf242" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — Pedoman Merchant Binance P2P. (<a href="https://www.binance.com/id/support/faq/detail/360043895111" target="_blank" rel="noopener">Binance</a>)</li>
       </ul>
 
       <p class="callout">
