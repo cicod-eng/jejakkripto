@@ -30,10 +30,10 @@
         "@type": "FAQPage",
         "mainEntity": [
           {"@type": "Question", "name": "Apakah USDT saya hilang kalau belum masuk ke Binance?", "acceptedAnswer": {"@type": "Answer", "text": "Belum tentu. Deposit kripto tidak masuk otomatis seperti transfer bank; Binance baru menambahkan saldo setelah transaksi mencapai jumlah konfirmasi tertentu di blockchain. Cek dulu jaringan dan TxID sebelum menyimpulkan dana hilang."}},
-          {"@type": "Question", "name": "Berapa lama deposit USDT biasanya masuk?", "acceptedAnswer": {"@type": "Answer", "text": "Tergantung jaringan. TRC20 dan BEP20 biasanya sekitar 1–5 menit, ERC20 sekitar 3–30 menit atau lebih. Saat jaringan ramai atau fee pengirim rendah, bisa lebih lama."}},
+          {"@type": "Question", "name": "Berapa lama deposit USDT biasanya masuk?", "acceptedAnswer": {"@type": "Answer", "text": "Tergantung jaringan dan jumlah konfirmasi yang diminta Binance. Dalam kondisi normal USDT sering masuk dalam hitungan menit, tetapi saat jaringan ramai bisa lebih lama. Lebih penting cek status TxID daripada memakai patokan waktu."}},
           {"@type": "Question", "name": "Bagaimana kalau saya kirim USDT di jaringan yang salah?", "acceptedAnswer": {"@type": "Answer", "text": "Deposit bisa tidak masuk otomatis. Hubungi Customer Support Binance dengan menyertakan TxID, jumlah, dan jaringan yang dipakai. Pemulihan tidak selalu dijamin dan bisa dikenai biaya."}},
           {"@type": "Question", "name": "Apakah USDT perlu diisi memo atau tag?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. USDT di jaringan TRC20, ERC20, dan BEP20 hanya memakai alamat, tanpa memo. Memo atau tag wajib untuk koin lain seperti XRP atau XLM."}},
-          {"@type": "Question", "name": "Kapan saya harus menghubungi Customer Support Binance?", "acceptedAnswer": {"@type": "Answer", "text": "Kalau transaksi sudah terkonfirmasi cukup di blockchain tetapi saldo tetap belum masuk, atau kamu kirim di jaringan yang salah. Siapkan TxID, koin, jumlah, jaringan, dan alamat pengirim."}}
+          {"@type": "Question", "name": "Kapan saya harus menghubungi Binance atau memakai Self-Service Recovery?", "acceptedAnswer": {"@type": "Answer", "text": "Kalau transaksi sudah terkonfirmasi di blockchain tetapi saldo tetap belum masuk, atau kamu kirim di jaringan yang salah. Kamu bisa menghubungi Customer Support atau mencoba fitur Self-Service Recovery, dengan menyiapkan TxID, koin, jumlah, jaringan, dan alamat pengirim."}}
         ]
       }
     ]
@@ -155,6 +155,7 @@
         (Ethereum), atau <strong>BEP20</strong> (BNB Smart Chain). Jaringan yang kamu pilih saat mengirim
         harus sama dengan jaringan alamat deposit Binance yang kamu salin. Kalau beda, saldo tidak masuk
         otomatis.
+        (<a href="https://www.binance.com/en/support/faq/detail/115003764971" target="_blank" rel="noopener">Binance</a>)
       </p>
 
       <h3>Langkah 3: Cek TxID di block explorer</h3>
@@ -169,8 +170,10 @@
       <p>
         Buka Binance, masuk ke <strong>Wallet → Riwayat Deposit</strong> (atau menu serupa). Lihat apakah
         transaksi sudah terdeteksi dengan status <strong>Menunggu Konfirmasi</strong>,
-        <strong>Diproses</strong>, atau <strong>Selesai</strong>. Kalau transaksi tidak muncul sama sekali,
-        kemungkinan besar jaringan atau alamatnya salah.
+        <strong>Diproses</strong>, atau <strong>Selesai</strong>. Kalau transaksi belum muncul sama sekali,
+        jangan langsung menyimpulkan alamatnya salah — cek TxID dulu. Kalau transaksi sudah sukses di
+        blockchain tapi tetap tidak terdeteksi Binance, lanjut ke Customer Support atau fitur
+        <strong>Self-Service Recovery</strong>.
       </p>
 
       <h3>Langkah 5: Cek minimum deposit</h3>
@@ -190,7 +193,7 @@
           </thead>
           <tbody>
             <tr><td>Konfirmasi blockchain belum cukup</td><td>Status pengirim sukses, tapi Binance masih menunggu konfirmasi</td><td>Tunggu sesuai jaringan; cek TxID untuk melihat progres</td></tr>
-            <tr><td>Jaringan tidak sama</td><td>Kamu kirim lewat ERC20, tapi alamat deposit Binance TRC20</td><td>Hubungi Customer Support; pemulihan tidak selalu dijamin</td></tr>
+            <tr><td>Jaringan tidak sama</td><td>Misalnya kamu memilih BEP20 saat mengirim, padahal Binance meminta deposit lewat ERC20 — alamat beberapa jaringan bisa terlihat mirip, tapi jaringannya harus tetap sama</td><td>Hubungi Customer Support; pemulihan tidak selalu dijamin</td></tr>
             <tr><td>Nominal di bawah minimum deposit</td><td>Jumlah kirim lebih kecil dari batas minimum jaringan</td><td>Umumnya tidak dikreditkan otomatis; cek batas di halaman deposit</td></tr>
             <tr><td>Alamat salah atau alamat lama</td><td>Kamu salin alamat yang keliru, atau pakai alamat deposit lama</td><td>Risiko hilang permanen; segera hubungi support</td></tr>
             <tr><td>Fee/gas pengirim terlalu rendah</td><td>Transaksi stuck pending di block explorer</td><td>Tunggu sampai diproses atau dibatalkan jaringan</td></tr>
@@ -200,10 +203,11 @@
       </div>
 
       <p>
-        Catatan soal memo/tag: <strong>USDT tidak memakai memo atau tag</strong>. Kalau kamu mengirim koin
-        lain seperti <strong>XRP</strong> atau <strong>XLM</strong>, memo atau tag wajib diisi — lupa
-        mengisinya bisa membuat deposit tidak masuk otomatis. Untuk USDT di TRC20/ERC20/BEP20, yang kamu
-        butuhkan hanya alamat deposit yang benar.
+        Catatan soal memo/tag: <strong>untuk deposit USDT lewat jaringan yang umum seperti TRC20, ERC20,
+        dan BEP20, biasanya kamu hanya perlu alamat deposit dan tidak perlu memo/tag</strong>. Namun, selalu
+        ikuti informasi yang muncul di halaman deposit Binance, karena persyaratannya bisa berbeda menurut
+        aset dan jaringan. Kalau kamu mengirim koin seperti <strong>XRP</strong> atau <strong>XLM</strong>,
+        memo atau tag biasanya wajib diisi.
       </p>
 
       <h2 id="jaringan">Jaringan dan waktu yang wajar</h2>
@@ -212,23 +216,24 @@
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Jaringan</th><th>Cek status di</th><th>Waktu normal (perkiraan)</th></tr>
+            <tr><th>Jaringan</th><th>Cek status di</th><th>Patokan utama</th></tr>
           </thead>
           <tbody>
-            <tr><td>TRC20 (Tron)</td><td><a href="https://tronscan.org" target="_blank" rel="noopener">Tronscan</a></td><td>1–5 menit</td></tr>
-            <tr><td>BEP20 (BNB Smart Chain)</td><td><a href="https://bscscan.com" target="_blank" rel="noopener">BscScan</a></td><td>1–5 menit</td></tr>
-            <tr><td>ERC20 (Ethereum)</td><td><a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a></td><td>3–30 menit, bisa lebih lama</td></tr>
+            <tr><td>TRC20 (Tron)</td><td><a href="https://tronscan.org" target="_blank" rel="noopener">Tronscan</a></td><td>Lihat status dan jumlah konfirmasi</td></tr>
+            <tr><td>BEP20 (BNB Smart Chain)</td><td><a href="https://bscscan.com" target="_blank" rel="noopener">BscScan</a></td><td>Lihat status dan jumlah konfirmasi</td></tr>
+            <tr><td>ERC20 (Ethereum)</td><td><a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a></td><td>Bisa lebih lama saat jaringan ramai</td></tr>
           </tbody>
         </table>
       </div>
 
       <p>
-        Saat jaringan sedang ramai — misalnya pasar bergerak tajam — waktu di atas bisa jauh lebih lama.
-        Kalau kamu sudah cek TxID dan transaksi memang masih <strong>pending</strong> dengan konfirmasi
-        belum cukup, yang perlu kamu lakukan adalah menunggu, bukan panik.
+        Dalam kondisi normal, USDT sering masuk dalam hitungan menit. Tapi jangan memakai batas waktu
+        tertentu sebagai patokan mutlak — yang lebih penting adalah status TxID dan apakah jumlah
+        konfirmasinya sudah memenuhi persyaratan Binance. Saat jaringan ramai, prosesnya bisa jauh lebih
+        lama, dan itu normal.
       </p>
 
-      <h2 id="kapan-support">Kapan harus menghubungi support</h2>
+      <h2 id="kapan-support">Kapan harus menghubungi Binance atau memakai Self-Service Recovery</h2>
       <p>
         Dua situasi yang mengharuskan kamu menghubungi <strong>Customer Support Binance</strong>:
         (1) transaksi sudah terkonfirmasi cukup di blockchain tapi saldo tetap belum masuk, dan (2) kamu
@@ -247,7 +252,14 @@
         dipahami: <strong>pemulihan tidak selalu dijamin</strong>, bisa memakan waktu, dan bisa dikenai
         biaya. Peluangnya lebih besar kalau jaringan yang salah pakai masih didukung Binance dan kamu
         menyertakan TxID yang benar.
-        (<a href="https://www.binance.com/en/support/faq/detail/115003798632" target="_blank" rel="noopener">Binance</a>)
+        (<a href="https://www.binance.com/en/support/faq/detail/115003736451" target="_blank" rel="noopener">Binance</a>)
+      </p>
+      <p>
+        Ada juga jalur <strong>Self-Service Recovery</strong>. Binance menyebutkan bahwa kalau transaksi
+        sudah berstatus <strong>confirmed/success</strong> di blockchain tetapi saldo belum masuk, kamu
+        bisa mencoba memulihkannya sendiri lewat fitur ini. Perlu diingat: kalau pemulihan berhasil, bisa
+        ada biaya pemrosesan.
+        (<a href="https://www.binance.com/en-NG/support/faq/detail/4d1347b4d6d44564ba44ea785703a4fd" target="_blank" rel="noopener">Binance</a>)
       </p>
 
       <h2 id="faq">Pertanyaan umum</h2>
@@ -256,7 +268,7 @@
       <p>Belum tentu. Deposit kripto tidak masuk otomatis seperti transfer bank; Binance baru menambahkan saldo setelah transaksi mencapai jumlah konfirmasi tertentu di blockchain. Cek dulu jaringan dan TxID sebelum menyimpulkan dana hilang.</p>
 
       <h3>Berapa lama deposit USDT biasanya masuk?</h3>
-      <p>Tergantung jaringan. TRC20 dan BEP20 biasanya sekitar 1–5 menit, ERC20 sekitar 3–30 menit atau lebih. Saat jaringan ramai atau fee pengirim rendah, bisa lebih lama.</p>
+      <p>Tergantung jaringan dan jumlah konfirmasi yang diminta Binance. Dalam kondisi normal USDT sering masuk dalam hitungan menit, tetapi saat jaringan ramai bisa lebih lama. Lebih penting cek status TxID daripada memakai patokan waktu.</p>
 
       <h3>Bagaimana kalau saya kirim USDT di jaringan yang salah?</h3>
       <p>Deposit bisa tidak masuk otomatis. Hubungi Customer Support Binance dengan menyertakan TxID, jumlah, dan jaringan yang dipakai. Pemulihan tidak selalu dijamin dan bisa dikenai biaya.</p>
@@ -264,8 +276,8 @@
       <h3>Apakah USDT perlu diisi memo atau tag?</h3>
       <p>Tidak. USDT di jaringan TRC20, ERC20, dan BEP20 hanya memakai alamat, tanpa memo. Memo atau tag wajib untuk koin lain seperti XRP atau XLM.</p>
 
-      <h3>Kapan saya harus menghubungi Customer Support Binance?</h3>
-      <p>Kalau transaksi sudah terkonfirmasi cukup di blockchain tetapi saldo tetap belum masuk, atau kamu kirim di jaringan yang salah. Siapkan TxID, koin, jumlah, jaringan, dan alamat pengirim.</p>
+      <h3>Kapan saya harus menghubungi Binance atau memakai Self-Service Recovery?</h3>
+      <p>Kalau transaksi sudah terkonfirmasi di blockchain tetapi saldo tetap belum masuk, atau kamu kirim di jaringan yang salah. Kamu bisa menghubungi Customer Support atau mencoba fitur Self-Service Recovery, dengan menyiapkan TxID, koin, jumlah, jaringan, dan alamat pengirim.</p>
 
       <h2>Langkah berikutnya</h2>
       <p>Setelah paham kenapa USDT bisa belum masuk, bacaan yang disarankan:</p>
@@ -279,7 +291,9 @@
 
       <h2>Sumber resmi</h2>
       <ul>
-        <li>Binance — Frequently Asked Questions on Incorrect Deposits. (<a href="https://www.binance.com/en/support/faq/detail/115003798632" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — How to Deposit Crypto to Binance. (<a href="https://www.binance.com/en/support/faq/detail/115003764971" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — Why Hasn't My Crypto Deposit Been Credited. (<a href="https://www.binance.com/en/support/faq/detail/115003736451" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — How to Retrieve a Deposit That Hasn't Arrived With Self-Service Recovery. (<a href="https://www.binance.com/en-NG/support/faq/detail/4d1347b4d6d44564ba44ea785703a4fd" target="_blank" rel="noopener">Binance</a>)</li>
         <li>Tronscan — block explorer jaringan TRC20. (<a href="https://tronscan.org" target="_blank" rel="noopener">Tronscan</a>)</li>
         <li>Etherscan — block explorer jaringan ERC20. (<a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a>)</li>
         <li>BscScan — block explorer jaringan BEP20. (<a href="https://bscscan.com" target="_blank" rel="noopener">BscScan</a>)</li>
