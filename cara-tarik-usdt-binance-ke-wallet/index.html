@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cara Tarik USDT dari Binance ke Wallet Lain (TRC20, ERC20, BEP20) — JejakKripto</title>
+  <meta name="description" content="Cara tarik USDT dari Binance ke wallet lain dengan aman. Panduan pilih jaringan TRC20, ERC20, BEP20, cek biaya, dan cara mencegah dana salah kirim.">
+  <link rel="canonical" href="https://jejakkripto.com/cara-tarik-usdt-binance-ke-wallet/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Cara Tarik USDT dari Binance ke Wallet Lain: Jaringan, Biaya, dan Cara Aman",
+        "description": "Cara tarik USDT dari Binance ke wallet lain dengan aman. Panduan pilih jaringan TRC20, ERC20, BEP20, cek biaya, dan cara mencegah dana salah kirim.",
+        "author": {"@type": "Organization", "name": "Tim Editorial JejakKripto"},
+        "publisher": {"@type": "Organization", "name": "JejakKripto", "url": "https://jejakkripto.com/"},
+        "datePublished": "2026-09-14",
+        "dateModified": "2026-09-14",
+        "mainEntityOfPage": "https://jejakkripto.com/cara-tarik-usdt-binance-ke-wallet/"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Berapa biaya tarik USDT dari Binance?", "acceptedAnswer": {"@type": "Answer", "text": "Biaya penarikan bersifat tetap per transaksi dan berbeda per jaringan. Sebagai patokan, TRC20 sekitar 1 USDT, BEP20 lebih murah, ERC20 lebih mahal dan bisa naik saat Ethereum ramai. Angka pastinya ditampilkan di halaman penarikan sebelum kamu konfirmasi."}},
+          {"@type": "Question", "name": "Jaringan apa yang paling murah untuk menarik USDT?", "acceptedAnswer": {"@type": "Answer", "text": "Biasanya BEP20 dan TRC20. Tapi jangan memilih hanya karena murah — jaringan harus sama dengan yang didukung wallet tujuan, atau dana bisa tidak masuk."}},
+          {"@type": "Question", "name": "Berapa lama USDT sampai ke wallet lain?", "acceptedAnswer": {"@type": "Answer", "text": "Biasanya dalam hitungan menit setelah diproses, tapi bisa lebih lama saat jaringan ramai. Cek status TxID di block explorer untuk kepastian."}},
+          {"@type": "Question", "name": "Bagaimana kalau saya salah pilih jaringan?", "acceptedAnswer": {"@type": "Answer", "text": "Dana bisa tidak masuk otomatis, dan transaksi blockchain tidak bisa dibatalkan. Hubungi dukungan wallet tujuan atau Binance dan siapkan TxID. Pemulihan tidak selalu dijamin dan bisa dikenai biaya."}},
+          {"@type": "Question", "name": "Apakah saya perlu mengisi memo saat menarik USDT?", "acceptedAnswer": {"@type": "Answer", "text": "Untuk USDT di TRC20, ERC20, dan BEP20 biasanya tidak perlu memo, cukup alamat. Memo atau tag wajib untuk koin seperti XRP atau XLM."}},
+          {"@type": "Question", "name": "Kenapa alamat wallet saya diawali huruf T atau 0x?", "acceptedAnswer": {"@type": "Answer", "text": "Itu penanda jaringan. Alamat TRC20 (Tron) diawali huruf T, sedangkan alamat ERC20 dan BEP20 diawali 0x. Cocokkan dengan jaringan yang kamu pilih di Binance."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="/"><img class="mark" src="/assets/img/logo.webp" alt="JejakKripto" width="30" height="30"><span class="jk">Jejak<strong>Kripto</strong></span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/belajar-kripto/">Belajar Kripto</a></li>
+        <li><a href="/bursa-kripto/">Bursa Kripto</a></li>
+        <li><a href="/dompet-kripto/">Dompet Kripto</a></li>
+        <li><a href="/aset-rwa/">Aset &amp; RWA</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="search-toggle" aria-label="Cari">🔍</button>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container article-body">
+      <nav class="breadcrumb" aria-label="breadcrumb"><a href="/">Beranda</a> › <a href="/bursa-kripto/">Bursa Kripto</a> › Cara Tarik USDT dari Binance ke Wallet Lain</nav>
+      <h1>Cara Tarik USDT dari Binance ke Wallet Lain: Jaringan, Biaya, dan Cara Aman</h1>
+      <div class="article-meta">
+        <span class="level">Pemula</span>
+        <span>7 menit baca</span>
+        <span>Diperbarui: September 2026</span>
+        <span>Terakhir diverifikasi: 14 September 2026</span>
+        <span>Ditulis oleh <a href="/tim-editorial/">Tim Editorial JejakKripto</a></span>
+      </div>
+
+      <p>
+        Menarik <strong>USDT</strong> dari Binance ke wallet lain sebenarnya singkat: buka menu
+        penarikan, tempel alamat wallet tujuan, pilih <strong>jaringan</strong> yang sama dengan wallet
+        itu, masukkan jumlah, lalu konfirmasi. Satu hal yang benar-benar menentukan dana sampai atau
+        tidak adalah jaringan. Kalau jaringan yang kamu pilih di Binance berbeda dengan jaringan wallet
+        tujuan, USDT bisa tidak masuk — dan transaksi di blockchain tidak bisa dibatalkan.
+      </p>
+
+      <p>
+        Karena itu, jangan memilih jaringan hanya karena paling murah. Pilih jaringan yang didukung
+        wallet tujuanmu. Artikel ini memandu langkahnya satu per satu, plus perbandingan jaringan dan
+        cara memastikan dana sudah benar-benar masuk.
+      </p>
+
+      <h2>Ringkasnya</h2>
+      <ul>
+        <li>Tarik USDT = kirim on-chain dari Binance ke alamat wallet lain. Kuncinya: jaringan pengirim dan penerima harus sama.</li>
+        <li>Urutan singkat: salin alamat tujuan → pilih jaringan yang sama → masukkan jumlah → cek biaya → konfirmasi dengan 2FA.</li>
+        <li>TRC20 (Tron) biasanya paling murah, tapi hanya untuk wallet yang mendukung TRC20.</li>
+        <li>Jangan ketik alamat manual; tempel dari aplikasi wallet. Kirim jumlah kecil dulu sebagai tes.</li>
+        <li>Kalau dana belum masuk setelah dikirim, cek TxID dulu, jangan langsung kirim ulang.</li>
+      </ul>
+
+      <h2>Daftar isi</h2>
+      <ul>
+        <li><a href="#persiapan">Sebelum mulai: siapkan dua hal ini</a></li>
+        <li><a href="#langkah">Langkah menarik USDT ke wallet lain</a></li>
+        <li><a href="#jaringan">Jaringan mana yang harus dipilih</a></li>
+        <li><a href="#biaya">Berapa biaya dan berapa lama sampai</a></li>
+        <li><a href="#cek">Cara memastikan dana sudah masuk</a></li>
+        <li><a href="#kesalahan">Kesalahan yang paling sering terjadi</a></li>
+        <li><a href="#jangan">Jangan lakukan ini</a></li>
+        <li><a href="#faq">Pertanyaan umum</a></li>
+      </ul>
+
+      <h2 id="persiapan">Sebelum mulai: siapkan dua hal ini</h2>
+      <p>
+        Sebelum menarik, siapkan dua hal: <strong>alamat wallet tujuan</strong> dan
+        <strong>saldo USDT</strong> yang cukup. Kamu juga perlu <strong>2FA</strong> aktif di akun
+        Binance untuk mengonfirmasi penarikan.
+      </p>
+
+      <p>
+        Wallet tujuan bisa berupa wallet pribadi seperti Trust Wallet atau MetaMask, atau exchange
+        lain — termasuk exchange lokal Indonesia seperti Tokocrypto atau Pintu. Cara kirimnya sama; yang
+        berbeda hanya alamat deposit dan jaringan yang didukung masing-masing tujuan.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tujuan</th><th>Contoh</th><th>Yang perlu kamu catat</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wallet pribadi</td><td>Trust Wallet, MetaMask, hardware wallet</td><td>Alamat + jaringan yang didukung</td></tr>
+            <tr><td>Exchange lokal</td><td>Tokocrypto, Pintu, Indodax</td><td>Alamat deposit + jaringan yang diminta exchange itu</td></tr>
+            <tr><td>Exchange lain</td><td>OKX dan sejenisnya</td><td>Alamat deposit + jaringan yang diminta</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="langkah">Langkah menarik USDT ke wallet lain</h2>
+      <p>Ikuti enam langkah ini berurutan. Kebanyakan kesalahan terjadi di langkah kedua dan ketiga.</p>
+
+      <h3>Langkah 1: Buka menu penarikan</h3>
+      <p>
+        Di website, masuk ke <strong>Wallet → Overview</strong> lalu pilih <strong>Withdraw</strong>,
+        atau <strong>Wallet → Spot → Withdraw</strong>. Di aplikasi, buka menu <strong>Aset</strong>
+        atau <strong>Assets</strong>, pilih <strong>Kirim/Send</strong>, pilih USDT, lalu pilih
+        penarikan on-chain. Nama menu bisa sedikit berbeda menurut versi aplikasi; yang penting kamu
+        menemukan menu untuk menarik kripto ke alamat luar.
+      </p>
+
+      <h3>Langkah 2: Salin alamat wallet tujuan</h3>
+      <p>
+        Buka wallet tujuanmu, pilih USDT, lalu pilih <strong>Terima/Receive</strong>. Salin alamat yang
+        muncul, dan perhatikan jaringan apa yang disarankan wallet itu — misalnya TRC20 atau ERC20.
+        <strong>Jangan mengetik alamat secara manual.</strong> Salah satu karakter saja bisa membuat
+        dana hilang.
+      </p>
+
+      <h3>Langkah 3: Tempel alamat dan pilih jaringan</h3>
+      <p>
+        Kembali ke Binance, tempel alamat yang tadi kamu salin. Pilih jaringan yang
+        <strong>sama persis</strong> dengan yang didukung wallet tujuan. Sebagai patokan cepat: alamat
+        TRC20 diawali huruf <strong>T</strong>, sedangkan alamat ERC20 dan BEP20 diawali
+        <strong>0x</strong>.
+      </p>
+
+      <h3>Langkah 4: Masukkan jumlah dan periksa biaya</h3>
+      <p>
+        Masukkan jumlah USDT yang ingin ditarik. Halaman penarikan akan menampilkan
+        <strong>biaya jaringan</strong> dan <strong>jumlah bersih</strong> yang akan diterima wallet
+        tujuan. Pastikan jumlahnya sesuai sebelum lanjut.
+      </p>
+
+      <h3>Langkah 5: Periksa ulang lalu konfirmasi</h3>
+      <p>
+        Periksa lagi alamat (minimal beberapa karakter awal dan akhir), jaringan, jumlah, dan biaya.
+        Kalau semua benar, konfirmasi. Binance biasanya meminta verifikasi lewat email dan kode
+        <strong>2FA</strong> atau passkey.
+      </p>
+
+      <h3>Langkah 6: Cek status lewat TxID</h3>
+      <p>
+        Setelah penarikan selesai diproses, salin <strong>TxID</strong> (transaction hash) dari riwayat
+        penarikan, lalu cek di block explorer sesuai jaringan. Ini cara paling pasti untuk melihat
+        status transaksi dan jumlah konfirmasinya.
+      </p>
+
+      <h2 id="jaringan">Jaringan mana yang harus dipilih</h2>
+      <p>
+        USDT bisa dikirim lewat beberapa jaringan. Jaringan yang kamu pilih harus sama dengan jaringan
+        wallet tujuan. Tabel berikut patokan umumnya — biaya bisa berubah, jadi selalu cek angka di
+        halaman penarikan Binance.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Jaringan</th><th>Patokan biaya</th><th>Alamat diawali</th><th>Cek status di</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>TRC20 (Tron)</td><td>sekitar 1 USDT</td><td>huruf "T"</td><td><a href="https://tronscan.org" target="_blank" rel="noopener">Tronscan</a></td></tr>
+            <tr><td>BEP20 (BNB Smart Chain)</td><td>sangat murah</td><td>"0x"</td><td><a href="https://bscscan.com" target="_blank" rel="noopener">BscScan</a></td></tr>
+            <tr><td>ERC20 (Ethereum)</td><td>lebih mahal, bisa naik saat ramai</td><td>"0x"</td><td><a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a></td></tr>
+            <tr><td>Polygon</td><td>sekitar 0,1 USDT</td><td>"0x"</td><td><a href="https://polygonscan.com" target="_blank" rel="noopener">Polygonscan</a></td></tr>
+            <tr><td>Solana</td><td>sekitar 1 USDT</td><td>alamat Solana</td><td><a href="https://solscan.io" target="_blank" rel="noopener">Solscan</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Untuk pengguna Indonesia, TRC20 sering jadi pilihan karena murah dan cepat. Tapi jangan otomatis
+        pilih TRC20 kalau wallet tujuanmu hanya mendukung ERC20 atau jaringan lain — kecocokan jaringan
+        lebih penting daripada murah.
+      </p>
+
+      <p>
+        Soal memo atau tag: untuk USDT di jaringan TRC20, ERC20, dan BEP20, kamu biasanya
+        <strong>tidak perlu mengisi memo</strong> — cukup alamat. Memo atau tag wajib untuk koin lain
+        seperti XRP atau XLM.
+      </p>
+
+      <h2 id="biaya">Berapa biaya dan berapa lama sampai</h2>
+      <p>
+        Biaya penarikan di Binance bersifat <strong>tetap per transaksi</strong>, bukan persentase —
+        jumlahnya sama berapa pun nominal yang kamu tarik. Biaya ini ditampilkan di halaman penarikan
+        sebelum kamu konfirmasi, jadi kamu bisa melihat angka pastinya di sana.
+      </p>
+      <p>
+        Soal waktu: penarikan kripto biasanya diproses dalam hitungan menit, tapi bisa lebih lama saat
+        jaringan ramai. Jaringan seperti TRC20 dan BEP20 umumnya lebih cepat; ERC20 bisa lebih lambat
+        dan lebih mahal saat Ethereum sedang padat. Jangan menjadikan menit tertentu sebagai patokan
+        mutlak — cek status TxID.
+        (<a href="https://www.binance.com/en/support/faq/detail/115003670492" target="_blank" rel="noopener">Binance</a>)
+      </p>
+
+      <h2 id="cek">Cara memastikan dana sudah masuk</h2>
+      <p>
+        Setelah status di Binance berubah menjadi selesai atau <strong>success</strong>, buka wallet
+        tujuan untuk memastikan saldo masuk. Kalau belum muncul, salin TxID dari riwayat penarikan
+        Binance, lalu tempel di block explorer sesuai jaringan. Status di explorer lebih akurat daripada
+        dugaan.
+      </p>
+      <p>
+        Kalau status di explorer sudah sukses tapi saldo tetap tidak muncul di wallet tujuan, kemungkinan
+        besar jaringannya tidak cocok. Masalah arah penarikan ini berbeda dengan deposit ke Binance.
+        Kalau kamu justru menunggu deposit yang belum masuk, baca
+        <a href="/usdt-belum-masuk/">USDT Belum Masuk ke Binance? Cek Penyebabnya</a>.
+      </p>
+
+      <h2 id="kesalahan">Kesalahan yang paling sering terjadi</h2>
+      <ul>
+        <li><strong>Salah memilih jaringan</strong> — ini kesalahan paling fatal, dana bisa tidak masuk.</li>
+        <li><strong>Mengetik alamat manual</strong> atau salah salin sebagian alamat.</li>
+        <li><strong>Memilih jaringan termurah</strong> tanpa memastikan wallet tujuan mendukungnya.</li>
+        <li><strong>Mengirim jumlah besar sekaligus</strong> tanpa tes jumlah kecil dulu.</li>
+      </ul>
+
+      <h2 id="jangan">Jangan lakukan ini</h2>
+      <ul>
+        <li><strong>Jangan pilih jaringan hanya karena paling murah.</strong> Utamakan kecocokan dengan wallet tujuan.</li>
+        <li><strong>Jangan ketik alamat manual.</strong> Selalu salin-tempel, lalu cek beberapa karakter awal dan akhir.</li>
+        <li><strong>Jangan kirim jumlah besar langsung tanpa tes kecil dulu.</strong></li>
+        <li><strong>Jangan bagikan kode 2FA, OTP, atau seed phrase</strong> kepada siapa pun — termasuk yang mengaku support Binance.</li>
+      </ul>
+
+      <h2 id="faq">Pertanyaan umum</h2>
+
+      <h3>Berapa biaya tarik USDT dari Binance?</h3>
+      <p>Biaya penarikan bersifat tetap per transaksi dan berbeda per jaringan. Sebagai patokan, TRC20 sekitar 1 USDT, BEP20 lebih murah, ERC20 lebih mahal dan bisa naik saat Ethereum ramai. Angka pastinya ditampilkan di halaman penarikan sebelum kamu konfirmasi.</p>
+
+      <h3>Jaringan apa yang paling murah untuk menarik USDT?</h3>
+      <p>Biasanya BEP20 dan TRC20. Tapi jangan memilih hanya karena murah — jaringan harus sama dengan yang didukung wallet tujuan, atau dana bisa tidak masuk.</p>
+
+      <h3>Berapa lama USDT sampai ke wallet lain?</h3>
+      <p>Biasanya dalam hitungan menit setelah diproses, tapi bisa lebih lama saat jaringan ramai. Cek status TxID di block explorer untuk kepastian.</p>
+
+      <h3>Bagaimana kalau saya salah pilih jaringan?</h3>
+      <p>Dana bisa tidak masuk otomatis, dan transaksi blockchain tidak bisa dibatalkan. Hubungi dukungan wallet tujuan atau Binance dan siapkan TxID. Pemulihan tidak selalu dijamin dan bisa dikenai biaya.</p>
+
+      <h3>Apakah saya perlu mengisi memo saat menarik USDT?</h3>
+      <p>Untuk USDT di TRC20, ERC20, dan BEP20 biasanya tidak perlu memo, cukup alamat. Memo atau tag wajib untuk koin seperti XRP atau XLM.</p>
+
+      <h3>Kenapa alamat wallet saya diawali huruf "T" atau "0x"?</h3>
+      <p>Itu penanda jaringan. Alamat TRC20 (Tron) diawali huruf T, sedangkan alamat ERC20 dan BEP20 diawali 0x. Cocokkan dengan jaringan yang kamu pilih di Binance.</p>
+
+      <h2>Langkah berikutnya</h2>
+      <p>Setelah paham cara menarik USDT ke wallet lain, bacaan yang disarankan:</p>
+      <ol>
+        <li><a href="/cara-beli-usdt-binance-p2p/">Cara Beli USDT dengan Rupiah di Binance P2P</a></li>
+        <li><a href="/usdt-belum-masuk/">USDT Belum Masuk ke Binance? Cek Penyebabnya</a></li>
+        <li><a href="/cara-mengaktifkan-2fa-binance/">Cara Mengaktifkan 2FA di Binance</a></li>
+        <li><a href="/biaya-trading-binance/">Biaya Trading Binance</a></li>
+        <li><a href="/dompet-kripto/">Dompet Kripto: Kenali Jenis dan Cara Menyimpannya</a></li>
+      </ol>
+
+      <p>
+        Belum punya akun Binance? <a class="btn btn-primary" href="https://www.binance.com/join?ref=B6YZZC7Z" target="_blank" rel="sponsored nofollow noopener">Buat akun Binance →</a>
+      </p>
+      <p class="disclose">Tautan afiliasi. JejakKripto dapat menerima komisi tanpa biaya tambahan bagi kamu.</p>
+
+      <h2>Sumber resmi</h2>
+      <ul>
+        <li>Binance — How to Withdraw Crypto from Binance? (<a href="https://www.binance.com/en/support/faq/detail/115003670492" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance Academy — Your Guide to Binance Deposit/Withdrawal. (<a href="https://www.binance.com/en/academy/articles/your-guide-to-binance-deposit-withdrawal" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Binance — How to Deposit/Withdraw Cryptocurrency on Binance? (<a href="https://www.binance.com/en/support/faq/detail/85a1c394ac1d489fb0bfac0ef2fceafd" target="_blank" rel="noopener">Binance</a>)</li>
+        <li>Tronscan — block explorer jaringan TRC20. (<a href="https://tronscan.org" target="_blank" rel="noopener">Tronscan</a>)</li>
+        <li>Etherscan — block explorer jaringan ERC20. (<a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a>)</li>
+        <li>BscScan — block explorer jaringan BEP20. (<a href="https://bscscan.com" target="_blank" rel="noopener">BscScan</a>)</li>
+      </ul>
+
+      <p class="callout">
+        <strong>Catatan:</strong> Nama menu, biaya, dan batas minimum penarikan dapat berbeda menurut
+        jaringan, negara, dan pembaruan terbaru Binance. Selalu ikuti tampilan yang muncul di akunmu dan
+        periksa halaman resmi sebelum bertransaksi.
+      </p>
+
+      <p class="disclose">
+        Informasi di JejakKripto bersifat edukatif dan bukan nasihat investasi. Aset kripto memiliki
+        risiko dan nilainya dapat berubah secara signifikan.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/"><img class="mark" src="/assets/img/logo.webp" alt="JejakKripto" width="30" height="30"><span class="jk">Jejak<strong>Kripto</strong></span></a>
+          <p>Panduan kripto yang jelas dan praktis untuk pemula di Indonesia.</p>
+        </div>
+        <div>
+          <h4>Panduan</h4>
+          <ul>
+            <li><a href="/belajar-kripto/">Belajar Kripto</a></li>
+            <li><a href="/bursa-kripto/">Bursa Kripto</a></li>
+            <li><a href="/dompet-kripto/">Dompet Kripto</a></li>
+            <li><a href="/aset-rwa/">Aset &amp; RWA</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="/panduan-binance/">Panduan Binance</a></li>
+            <li><a href="/panduan-okx/">Panduan OKX</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tentang</h4>
+          <ul>
+            <li><a href="/tentang-kami/">Tentang Kami</a></li>
+            <li><a href="/pengungkapan-afiliasi/">Pengungkapan Afiliasi</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 JejakKripto. Semua hak dilindungi.</span>
+        <span>JejakKripto tidak pernah meminta seed phrase atau private key.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
