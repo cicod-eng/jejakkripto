@@ -29,12 +29,12 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {"@type": "Question", "name": "Berapa biaya tarik USDT dari Binance?", "acceptedAnswer": {"@type": "Answer", "text": "Biaya penarikan bersifat tetap per transaksi dan berbeda per jaringan. Sebagai patokan, TRC20 sekitar 1 USDT, BEP20 lebih murah, ERC20 lebih mahal dan bisa naik saat Ethereum ramai. Angka pastinya ditampilkan di halaman penarikan sebelum kamu konfirmasi."}},
+          {"@type": "Question", "name": "Berapa biaya tarik USDT dari Binance?", "acceptedAnswer": {"@type": "Answer", "text": "Biaya penarikan USDT berbeda menurut jaringan dan dapat berubah mengikuti kondisi jaringan. Sebagai perbandingan umum, TRC20 dan BEP20 biasanya relatif lebih murah, sedangkan ERC20 bisa lebih tinggi saat Ethereum ramai. Angka yang berlaku ditampilkan di halaman penarikan Binance sebelum kamu mengonfirmasi transaksi."}},
           {"@type": "Question", "name": "Jaringan apa yang paling murah untuk menarik USDT?", "acceptedAnswer": {"@type": "Answer", "text": "Biasanya BEP20 dan TRC20. Tapi jangan memilih hanya karena murah — jaringan harus sama dengan yang didukung wallet tujuan, atau dana bisa tidak masuk."}},
           {"@type": "Question", "name": "Berapa lama USDT sampai ke wallet lain?", "acceptedAnswer": {"@type": "Answer", "text": "Biasanya dalam hitungan menit setelah diproses, tapi bisa lebih lama saat jaringan ramai. Cek status TxID di block explorer untuk kepastian."}},
           {"@type": "Question", "name": "Bagaimana kalau saya salah pilih jaringan?", "acceptedAnswer": {"@type": "Answer", "text": "Dana bisa tidak masuk otomatis, dan transaksi blockchain tidak bisa dibatalkan. Hubungi dukungan wallet tujuan atau Binance dan siapkan TxID. Pemulihan tidak selalu dijamin dan bisa dikenai biaya."}},
           {"@type": "Question", "name": "Apakah saya perlu mengisi memo saat menarik USDT?", "acceptedAnswer": {"@type": "Answer", "text": "Untuk USDT di TRC20, ERC20, dan BEP20 biasanya tidak perlu memo, cukup alamat. Memo atau tag wajib untuk koin seperti XRP atau XLM."}},
-          {"@type": "Question", "name": "Kenapa alamat wallet saya diawali huruf T atau 0x?", "acceptedAnswer": {"@type": "Answer", "text": "Itu penanda jaringan. Alamat TRC20 (Tron) diawali huruf T, sedangkan alamat ERC20 dan BEP20 diawali 0x. Cocokkan dengan jaringan yang kamu pilih di Binance."}}
+          {"@type": "Question", "name": "Kenapa alamat wallet saya diawali huruf T atau 0x?", "acceptedAnswer": {"@type": "Answer", "text": "Itu adalah format alamat yang digunakan blockchain tertentu, tetapi bukan cara yang cukup untuk menentukan jaringan. Alamat TRON biasanya diawali T, sedangkan Ethereum, BNB Smart Chain, Polygon, dan banyak jaringan EVM menggunakan 0x. Jadi kalau alamatmu 0x, tetap cek nama jaringan di wallet tujuan sebelum menarik USDT."}}
         ]
       }
     ]
@@ -89,7 +89,7 @@
       <ul>
         <li>Tarik USDT = kirim on-chain dari Binance ke alamat wallet lain. Kuncinya: jaringan pengirim dan penerima harus sama.</li>
         <li>Urutan singkat: salin alamat tujuan → pilih jaringan yang sama → masukkan jumlah → cek biaya → konfirmasi dengan 2FA.</li>
-        <li>TRC20 (Tron) biasanya paling murah, tapi hanya untuk wallet yang mendukung TRC20.</li>
+        <li>TRC20 (Tron) biasanya murah dan cepat, tapi hanya untuk wallet yang mendukung TRC20.</li>
         <li>Jangan ketik alamat manual; tempel dari aplikasi wallet. Kirim jumlah kecil dulu sebagai tes.</li>
         <li>Kalau dana belum masuk setelah dikirim, cek TxID dulu, jangan langsung kirim ulang.</li>
       </ul>
@@ -155,9 +155,11 @@
       <h3>Langkah 3: Tempel alamat dan pilih jaringan</h3>
       <p>
         Kembali ke Binance, tempel alamat yang tadi kamu salin. Pilih jaringan yang
-        <strong>sama persis</strong> dengan yang didukung wallet tujuan. Sebagai patokan cepat: alamat
-        TRC20 diawali huruf <strong>T</strong>, sedangkan alamat ERC20 dan BEP20 diawali
-        <strong>0x</strong>.
+        <strong>sama persis</strong> dengan yang didukung wallet tujuan. Sebagai petunjuk format,
+        alamat TRON (TRC20) umumnya diawali huruf <strong>T</strong>, sedangkan Ethereum (ERC20), BNB
+        Smart Chain (BEP20), Polygon, dan banyak jaringan EVM lain menggunakan alamat
+        <strong>0x</strong>. Karena itu, alamat <strong>0x</strong> saja tidak bisa digunakan untuk
+        menentukan jaringan. Ikuti nama jaringan yang ditampilkan oleh wallet atau exchange tujuan.
       </p>
 
       <h3>Langkah 4: Masukkan jumlah dan periksa biaya</h3>
@@ -191,17 +193,22 @@
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Jaringan</th><th>Patokan biaya</th><th>Alamat diawali</th><th>Cek status di</th></tr>
+            <tr><th>Jaringan</th><th>Biaya relatif</th><th>Format alamat umum</th><th>Cek transaksi</th></tr>
           </thead>
           <tbody>
-            <tr><td>TRC20 (Tron)</td><td>sekitar 1 USDT</td><td>huruf "T"</td><td><a href="https://tronscan.org" target="_blank" rel="noopener">Tronscan</a></td></tr>
-            <tr><td>BEP20 (BNB Smart Chain)</td><td>sangat murah</td><td>"0x"</td><td><a href="https://bscscan.com" target="_blank" rel="noopener">BscScan</a></td></tr>
-            <tr><td>ERC20 (Ethereum)</td><td>lebih mahal, bisa naik saat ramai</td><td>"0x"</td><td><a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a></td></tr>
-            <tr><td>Polygon</td><td>sekitar 0,1 USDT</td><td>"0x"</td><td><a href="https://polygonscan.com" target="_blank" rel="noopener">Polygonscan</a></td></tr>
-            <tr><td>Solana</td><td>sekitar 1 USDT</td><td>alamat Solana</td><td><a href="https://solscan.io" target="_blank" rel="noopener">Solscan</a></td></tr>
+            <tr><td>TRON (TRC20)</td><td>biasanya relatif rendah</td><td>umumnya diawali <code>T</code></td><td><a href="https://tronscan.org" target="_blank" rel="noopener">Tronscan</a></td></tr>
+            <tr><td>BNB Smart Chain (BEP20)</td><td>biasanya relatif rendah</td><td><code>0x...</code></td><td><a href="https://bscscan.com" target="_blank" rel="noopener">BscScan</a></td></tr>
+            <tr><td>Ethereum (ERC20)</td><td>dapat lebih tinggi saat jaringan ramai</td><td><code>0x...</code></td><td><a href="https://etherscan.io" target="_blank" rel="noopener">Etherscan</a></td></tr>
+            <tr><td>Polygon</td><td>biasanya relatif rendah</td><td><code>0x...</code></td><td><a href="https://polygonscan.com" target="_blank" rel="noopener">Polygonscan</a></td></tr>
+            <tr><td>Solana</td><td>biasanya relatif rendah</td><td>format alamat Solana</td><td><a href="https://solscan.io" target="_blank" rel="noopener">Solscan</a></td></tr>
           </tbody>
         </table>
       </div>
+
+      <p>
+        Biaya di atas hanya perbandingan umum, bukan tarif tetap. Selalu gunakan angka yang muncul di
+        halaman Withdraw Binance sebagai acuan terakhir.
+      </p>
 
       <p>
         Untuk pengguna Indonesia, TRC20 sering jadi pilihan karena murah dan cepat. Tapi jangan otomatis
@@ -217,9 +224,14 @@
 
       <h2 id="biaya">Berapa biaya dan berapa lama sampai</h2>
       <p>
-        Biaya penarikan di Binance bersifat <strong>tetap per transaksi</strong>, bukan persentase —
-        jumlahnya sama berapa pun nominal yang kamu tarik. Biaya ini ditampilkan di halaman penarikan
-        sebelum kamu konfirmasi, jadi kamu bisa melihat angka pastinya di sana.
+        Biaya penarikan USDT berbeda menurut jaringan dan dapat berubah mengikuti kondisi jaringan.
+        Biaya yang berlaku akan ditampilkan di halaman penarikan Binance sebelum kamu mengonfirmasi
+        transaksi. Karena itu, jangan menjadikan angka biaya di artikel sebagai tarif tetap.
+      </p>
+      <p>
+        Biaya penarikan biasanya ditampilkan sebagai nominal tertentu untuk transaksi tersebut, bukan
+        persentase dari jumlah USDT yang kamu kirim. Namun, nominal biaya dapat berubah sesuai jaringan
+        dan kondisi saat itu.
       </p>
       <p>
         Soal waktu: penarikan kripto biasanya diproses dalam hitungan menit, tapi bisa lebih lama saat
@@ -237,9 +249,19 @@
         dugaan.
       </p>
       <p>
-        Kalau status di explorer sudah sukses tapi saldo tetap tidak muncul di wallet tujuan, kemungkinan
-        besar jaringannya tidak cocok. Masalah arah penarikan ini berbeda dengan deposit ke Binance.
-        Kalau kamu justru menunggu deposit yang belum masuk, baca
+        Kalau transaksi di block explorer sudah berstatus sukses tetapi saldo belum terlihat, jangan
+        langsung menganggap USDT hilang. Periksa apakah wallet sedang berada di jaringan yang benar,
+        apakah token USDT pada jaringan tersebut sudah ditampilkan, dan apakah alamat penerima sesuai.
+        Jika tujuan adalah exchange atau wallet kustodian, proses kredit internal juga bisa membutuhkan
+        waktu tambahan.
+      </p>
+      <p>
+        Kalau ternyata jaringan yang dipilih berbeda dari yang didukung tujuan, jangan kirim ulang dulu.
+        Simpan TxID dan hubungi pihak wallet atau exchange tujuan. Pada beberapa wallet pribadi, aset
+        masih mungkin dipulihkan, tetapi pada layanan kustodian pemulihan tidak selalu tersedia.
+      </p>
+      <p>
+        Kalau yang kamu tunggu adalah deposit yang belum masuk ke akun Binance, arahnya berbeda — baca
         <a href="/usdt-belum-masuk/">USDT Belum Masuk ke Binance? Cek Penyebabnya</a>.
       </p>
 
@@ -262,7 +284,7 @@
       <h2 id="faq">Pertanyaan umum</h2>
 
       <h3>Berapa biaya tarik USDT dari Binance?</h3>
-      <p>Biaya penarikan bersifat tetap per transaksi dan berbeda per jaringan. Sebagai patokan, TRC20 sekitar 1 USDT, BEP20 lebih murah, ERC20 lebih mahal dan bisa naik saat Ethereum ramai. Angka pastinya ditampilkan di halaman penarikan sebelum kamu konfirmasi.</p>
+      <p>Biaya penarikan USDT berbeda menurut jaringan dan dapat berubah mengikuti kondisi jaringan. Sebagai perbandingan umum, TRC20 dan BEP20 biasanya relatif lebih murah, sedangkan ERC20 bisa lebih tinggi saat Ethereum ramai. Angka yang berlaku ditampilkan di halaman penarikan Binance sebelum kamu mengonfirmasi transaksi.</p>
 
       <h3>Jaringan apa yang paling murah untuk menarik USDT?</h3>
       <p>Biasanya BEP20 dan TRC20. Tapi jangan memilih hanya karena murah — jaringan harus sama dengan yang didukung wallet tujuan, atau dana bisa tidak masuk.</p>
@@ -277,7 +299,7 @@
       <p>Untuk USDT di TRC20, ERC20, dan BEP20 biasanya tidak perlu memo, cukup alamat. Memo atau tag wajib untuk koin seperti XRP atau XLM.</p>
 
       <h3>Kenapa alamat wallet saya diawali huruf "T" atau "0x"?</h3>
-      <p>Itu penanda jaringan. Alamat TRC20 (Tron) diawali huruf T, sedangkan alamat ERC20 dan BEP20 diawali 0x. Cocokkan dengan jaringan yang kamu pilih di Binance.</p>
+      <p>Itu adalah format alamat yang digunakan blockchain tertentu, tetapi bukan cara yang cukup untuk menentukan jaringan. Alamat TRON biasanya diawali T, sedangkan Ethereum, BNB Smart Chain, Polygon, dan banyak jaringan EVM menggunakan 0x. Jadi kalau alamatmu 0x, tetap cek nama jaringan di wallet tujuan sebelum menarik USDT.</p>
 
       <h2>Langkah berikutnya</h2>
       <p>Setelah paham cara menarik USDT ke wallet lain, bacaan yang disarankan:</p>
