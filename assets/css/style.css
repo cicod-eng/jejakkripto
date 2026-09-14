@@ -708,3 +708,24 @@ th { background: var(--bg-secondary); font-weight: 700; }
   .article-body h1 { font-size: 26px; }
   .article-body h2 { font-size: 21px; }
 }
+
+/* ===== Kamus / Glosarium ===== */
+dl.kamus dt { font-weight: 700; color: var(--heading); margin-top: 14px; }
+dl.kamus dd { margin: 4px 0 10px; color: var(--text-body); }
+.kamus-group { margin-bottom: 8px; }
+.kamus-toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.kamus-toc a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; font-weight: 600; color: var(--text-body); }
+.kamus-toc a:hover { border-color: var(--border-hover); color: var(--primary); }
+
+/* ===== Harga Hari Ini (referensi) ===== */
+.price-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0 8px; }
+.price-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; }
+.price-card .sym { font-family: var(--font-heading); font-weight: 700; font-size: 18px; color: var(--heading); }
+.price-card .val { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: var(--primary-dark); margin: 6px 0 2px; }
+.price-card .note { font-size: 12.5px; color: var(--text-light); margin: 0; }
+.price-note { font-size: 13px; color: var(--text-muted); margin: 4px 0 0; }
+@media (max-width: 640px) { .price-strip { grid-template-columns: 1fr; } }
+
+/* ===== Artikel terbaru: tanggal ===== */
+.u-left { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.u-date { font-size: 12.5px; color: var(--text-muted); }
