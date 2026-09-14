@@ -23,7 +23,7 @@ JejakKripto 不应该成为「一个翻译成印尼语的 Affiliate 加密站」
 - 部署：GitHub Pages
 - 核心定位：面向印尼新手的实用加密货币指南与问题解决平台
 - 品牌关键词：sederhana / praktis / jelas / netral / ramah pemula（简单、实用、清楚、中立、适合新手）
-- 商业化：Binance + OKX 双平台计佣（affiliate），邀请码 BN522 / OK800；本地交易所降级为场景文章
+- 商业化：Binance + OKX 双平台计佣（affiliate），邀请码 B6YZZC7Z / OK800；本地交易所降级为场景文章
 
 ## 二、网站整体语言规范
 
