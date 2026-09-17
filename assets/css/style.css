@@ -476,7 +476,7 @@ img { max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--border-line);
 }
 .post-item:last-child { border-bottom: none; }
-.post-item .ttl { font-weight: 700; color: var(--heading); }
+.post-item .ttl { font-weight: 700; color: var(--heading); margin-right: 12px; }
 .post-item .ttl:hover { color: var(--primary); }
 .post-item .meta-line { display: flex; align-items: center; gap: 8px; flex: none; }
 .post-item .tag {
