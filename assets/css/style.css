@@ -185,6 +185,7 @@ img { max-width: 100%; height: auto; }
 .btn-outline { border-color: var(--primary); color: var(--primary); background: transparent; }
 .btn-outline:hover { background: var(--primary-light); color: var(--primary-hover); }
 .btn-lg { padding: 14px 24px; font-size: 16px; }
+.btn .btn-logo { width: 20px; height: 20px; flex: none; border-radius: 4px; background: #fff; padding: 2px; object-fit: contain; }
 
 /* ---------- Hero ---------- */
 .hero {
